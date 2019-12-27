@@ -1,0 +1,8 @@
+.jumbotron {
+    text-align: center;
+}
+
+#main {
+    height: auto;
+    overflow-y: scroll;
+}
