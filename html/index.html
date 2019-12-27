@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="jumbotron" id="app">
+    <div class="jumbotron text-center" id="app">
         <img src="../img/me-graduation-edit.png" alt="me at graduation" class="rounded-circle">
         <h1 class="display-4">{{message}}</h1>
         <p class="lead">CS grad from SIUE, looking to leverage web development experience with people skills</p>
@@ -87,7 +87,7 @@
         <h3 id="employment">Employment</h3>
         <h5>Hunter Engineering Company</h5>
         <h6>Aug 2019 - present</h6>
-        <ul>
+        <ul id="hunter-ul">
             <li>
                 Participated in Agile-driven design, documentation, architecture, development and
                 deployment of requested enhancements to an internal web form using React, Node.js
@@ -106,7 +106,7 @@
         </ul>
         <h5>Maritz Motivation</h5>
         <h6>May 2019 - Aug 2019</h6>
-        <ul>
+        <ul id="maritz-ul">
             <li>
                 Architected, developed, and deployed various legacy e-commerce app enhancements
                 used in production today
@@ -131,7 +131,7 @@
         </ul>
         <h5>Spectrum</h5>
         <h6>May 2018 - Aug 2018</h6>
-        <ul>
+        <ul id="spectrum-ul">
             <li>
                 Developed a RESTful Web application allowing users to submit deployment ticket info
                 needed before release of web service, save info to a centralized file, send all info to
@@ -147,6 +147,29 @@
             </li>
         </ul>
         <h3 id="projects">Projects</h3>
+        <a href="https://aisle.isg.siue.edu/">
+            <h5>AISLE (senior project)</h5>
+        </a>
+        <ul>
+            <li>
+                Mobile Bluetooth-integrated application allowing SIUE population to identify points of
+                interest on campus
+            </li>
+            <li>
+                App serves as web wrapper for site built with .NET MVC
+            </li>
+        </ul>
+        <h5>Chipmunk</h5>
+        <ul>
+            <li>
+                Debian-based package manager with account backup feature for easy distro-hopping
+            </li>
+            <li>
+                Collaboratively developed Web interface with account creation/login, search, package
+                downloading features, CLI for package installation
+            </li>
+            <li>Slim (PHP) used for RESTful API development, Postman for API testing</li>
+        </ul>
     </div>
 
 </body>
