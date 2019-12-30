@@ -19,7 +19,6 @@
         </p>
     </div>
 
-
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#skillsModal">Skills</button>
 
     <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="skillsTitle"
@@ -32,90 +31,19 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="modal-view">
                     <h5>Languages</h5>
-                    <div class="container" id="blah">
-                        <modal-body-section :images="images"></modal-body-section>
-                        <!-- <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/java.png" alt="Java" height="50" width="50">
-                                <img src="img/js.png" alt="JavaScript" height="50" width="50">
-                                <img src="img/jquery.png" alt="jQuery" height="100" width="100">
-                                <img src="img/mysql.jpg" alt="MySQL" height="50" width="50">
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/c-sharp.png" alt="C#" height="50" width="50">
-                                <img src="img/cplusplus.png" alt="C++" height="50" width="50">
-                                <img src="img/html5.png" alt="HTML5" height="50" width="50">
-                                <img src="img/css3.png" alt="CSS3" height="50" width="50">
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/php.png" alt="PHP" height="80" width="80">
-                                <img src="img/python.png" alt="Python" height="80" width="80">
-                            </div>
-                        </div> -->
+                    <div class="container">
+                        <modal-body-section :images="languages"></modal-body-section>
                     </div>
                     <h5>Technologies</h5>
                     <div class="container">
-                        <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/git.png" alt="Git" height="50" width="50">
-                                <img src="img/spring.png" alt="Spring" height="50" width="50">
-                                <img src="img/sql-server.png" alt="SQL Server" height="50" width="50">
-                                <img src="img/maven.png" alt="Maven" height="50" width="50">
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/react.png" alt="React" height="50" width="50">
-                                <img src="img/nodejs.png" alt="Node.js" height="50" width="50">
-                                <img src="img/npm.png" alt="npm" height="50" width="50">
-                                <img src="img/jenkins.png" alt="Jenkins" height="50" width="50">
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/azure.png" alt="Azure" height="50" width="50">
-                                <img src="img/jboss.png" alt="JBoss" height="50" width="50">
-                                <img src="img/linux.png" alt="Linux" height="50" width="50">
-                            </div>
-                        </div>
+                        <modal-body-section :images="technologies"></modal-body-section>
                     </div>
                     <h5>Processes</h5>
                     <div class="container">
-                        <div class="row text-center">
-                            <div class="col-sm">
-                                <img src="img/scrum.png" alt="Scrum" height="50" width="50">
-                            </div>
-                        </div>
+                        <modal-body-section :images="processes"></modal-body-section>
                     </div>
-
-                    <!-- <li id="technologies">Technologies
-                        <ul id="technologies-ul">
-                            <li>Git</li>
-                            <li>TFS</li>
-                            <li>Spring</li>
-                            <li>SQL Server</li>
-                            <li>Maven</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>npm</li>
-                            <li>Jenkins</li>
-                            <li>Azure</li>
-                            <li>JBoss</li>
-                            <li>Unix CLI</li>
-                        </ul>
-                    </li>
-                    <li id="processes">Processes
-                        <ul id="processes-ul">
-                            <li>Scrum</li>
-                        </ul>
-                    </li>
-                    </ul> -->
                 </div>
             </div>
         </div>
