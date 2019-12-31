@@ -20,8 +20,9 @@
     </div>
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#skillsModal">Skills</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#employmentModal">Employment</button>
 
-    <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="skillsTitle"
+    <div class="modal fade" id="skillsModal" tabindex="1" role="dialog" aria-labelledby="skillsTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -33,17 +34,29 @@
                 </div>
                 <div class="modal-body" id="modal-view">
                     <h5>Languages</h5>
-                    <div class="container">
-                        <modal-body-section :images="languages"></modal-body-section>
-                    </div>
+                    <modal-body-section :images="languages"></modal-body-section>
                     <h5>Technologies</h5>
-                    <div class="container">
-                        <modal-body-section :images="technologies"></modal-body-section>
-                    </div>
+                    <modal-body-section :images="technologies"></modal-body-section>
                     <h5>Processes</h5>
-                    <div class="container">
-                        <modal-body-section :images="processes"></modal-body-section>
-                    </div>
+                    <modal-body-section :images="processes"></modal-body-section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="employmentModal" tabIndex="2" role="dialog" aria-labelledby="employmentTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="employmentTitle">Employment</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center" id="modal-view">
+                    <img src="img/hunter.jpg" alt="Hunter Engineering Company" class="rounded my-3" height="100" width="250">
+                    <img src="img/maritz.jpg" alt="Maritz Motivation" class="rounded my-3" height="100" width="250">
+                    <img src="img/spectrum.png" alt="Spectrum" class="rounded my-3" height="100" width="250">
                 </div>
             </div>
         </div>
